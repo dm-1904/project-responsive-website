@@ -1,10 +1,16 @@
+/* .hero {
+  display: flex;
+} */
+
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .rightHeader {
   display: flex;
-  /* justify-self: flex-end; */
+  width: 200px;
   justify-content: space-around;
+  padding-bottom: 30px;
 }
