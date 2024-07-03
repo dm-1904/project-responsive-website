@@ -135,19 +135,32 @@
 .team-pics-box {
   display: flex;
   justify-content: center;
+  /* flex-direction: column; */
   column-gap: 20px;
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 50px;
 }
 
+.pic-group {
+  display: flex;
+}
+
 .team-pics-box > img {
   align-self: center;
+  /* display: flex; */
+
+}
+
+.pic-group1 .pic-group2 {
+ display: flex;
+ flex-direction: column;
 }
 
 .pic1, .pic2, .pic3, .pic4 {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  padding: 0px 15px;
 
 }
 
@@ -215,7 +228,7 @@ hr {
   background-color: green;
 } */
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .pic-gallery {
     height: auto;
     display: flex;
@@ -262,12 +275,48 @@ hr {
     display: none;
   }
 
+  .pic-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
 
+@media (max-width: 767px) {
+  .pic-gallery {
+    display: flex;
+    justify-content: center;
+  }
 
+  .icon {
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
 
-/* .rightHeader button {
-  border: none;
-  background-color: white;
-  display: none;
-} */
+  }
+
+  .pic-group {
+    flex-direction: column;
+  }
+
+  .footer-box,
+  .social-icons,
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-icons {
+    /* align-items: center; */
+    margin: auto;
+    /* padding-top: 20px; */
+  }
+
+  .facebook,
+  .twitter,
+  .instagram,
+  .linkedin {
+    padding-top: 20px;
+  }
+}
