@@ -240,9 +240,7 @@ hr {
   position: fixed;
   bottom: 0px;
   left: 50%;
-  /* width: 1200px; */
-  /* left: 5%;
-  right: 5%; */
+
 }
 
 .footer-text {
@@ -259,12 +257,12 @@ hr {
   border-radius: 8px;
   align-self: center;
   margin-right: 20px;
-  /* justify-self: flex-end; */
+  margin-left: 20px;
 }
 
 .scroll-header, .scroll-span {
   color: white;
-
+  margin-left: 20px;
 }
 
 
