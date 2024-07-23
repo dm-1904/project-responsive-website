@@ -1,6 +1,11 @@
+* {
+  border: 1px solid red;
+}
+
 .hero {
   max-width: 1200px;
   margin: auto;
+  position: relative;
 }
 
 .header {
@@ -169,6 +174,7 @@
   background-color: black;
   color: gray;
   flex-direction: column;
+  margin-bottom: 80px;
 }
 
 .social-icons {
@@ -222,11 +228,56 @@ hr {
 
 .footer-footer {
   text-align: center;
+
 }
+
+#scrollUp {
+  display: flex;
+  background-color: #407cfc;
+  height: 80px;
+  /* flex-direction: row-reverse; */
+  border-radius: 8px;
+  position: fixed;
+  bottom: 0px;
+  width: 1200px;
+  /* left: 5%;
+  right: 5%; */
+}
+
+.footer-text {
+  margin: 0 auto;
+}
+
+.scroll-header {
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+
+.scroll-button {
+  height: 40px;
+  border-radius: 8px;
+  align-self: center;
+  margin-right: 20px;
+  /* justify-self: flex-end; */
+}
+
+.scroll-header, .scroll-span {
+  color: white;
+
+}
+
 
 /* body {
   background-color: green;
 } */
+
+@media (max-width: 1200px) {
+  #scrollUp {
+    /* width: 100%; */
+    right: 10px;
+    left: 10px;
+  }
+}
 
 @media (max-width: 1023px) {
   .pic-gallery {
